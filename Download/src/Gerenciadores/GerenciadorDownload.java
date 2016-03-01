@@ -8,7 +8,8 @@ import java.io.File;
  */
 public class GerenciadorDownload {
     
-    public File baixarArquivo(String stringUrl, String local){
+    public File baixarArquivo(String stringUrl){
+        String local = "D:\\";
         ThreadDownload th = new ThreadDownload(stringUrl,local);
         th.start();
         return null;
