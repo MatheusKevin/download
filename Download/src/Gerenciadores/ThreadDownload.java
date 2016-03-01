@@ -37,7 +37,7 @@ public class ThreadDownload extends Thread{
             is.close();
             fos.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            e.getMessage();
         }
     }
     
